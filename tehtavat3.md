@@ -179,7 +179,7 @@ Open And Configure Browser
 
 Tiedostossa on myös osio `*** Variables ***` missä on mahdollista määritellä muuttujia, jotka ovat kaikkien osion avainsanojen käytössä. Huomaa, että määritellyt muuttujat kirjoitetaan isoilla kirjaimilla, toisin kuin argumentit. Muuttujia kannattaa suosia aina kovakoodattujen arvojen sijaan.
 
-`*** Keywords ***`-osiossa on määritellään avainsana `Open And Configure Browser` joka alustaa selaimen testejä varten:
+`*** Keywords ***`-osiossa määritellään avainsana `Open And Configure Browser` joka alustaa selaimen testejä varten:
 
 - Avainsana käynnistää selaimen käyttämällä Browser-kirjaston [New Browser](https://marketsquare.github.io/robotframework-browser/Browser.html#New%20Browser) -avainsanaa antaen `browser`-argumentin arvoksi käytetyn selaimen, joka on oletusarvoisesti  _chromium_. Muita vaihtoehtoja ovat _firefox_ ja _webkit_, jotka tosin on asennettava erikseen komennolla `uv run rfbrowser install firefox` tai `uv run rfbrowser install webkit`.
 - Argumentti `headless=False` määrittelee, että selaimen ikkuna on näkyvissä testien suorituksen ajan.
