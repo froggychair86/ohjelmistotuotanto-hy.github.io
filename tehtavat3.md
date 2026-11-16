@@ -498,7 +498,7 @@ Sovelluksen rakenne ja testien suhde siihen näyttää seuraavalta:
 
 Sovelluksen käyttöliittymä on toteutettu edellisten tehtävien sovelluksen tapaan tiedostoon `app.py` sekä hakemistoon `templates`. Ohjelman käyttäjien hallintaan liittyvä _sovelluslogiikka_ on sijoitettu omaan luokkaansa `UserService`.
 
-Sovelluksen käytössä oleva versio ei tallenna käyttäjien tietoja varsinaisesti mihinkän pysyvämpään paikkaan, kuten tietokantaan tai tiedostoon, käyttäjien tiedot pidetään ainoastaan keskusmuistissa.
+Sovelluksen käytössä oleva versio ei tallenna käyttäjien tietoja varsinaisesti mihinkään pysyvämpään paikkaan, kuten tietokantaan tai tiedostoon, käyttäjien tiedot pidetään ainoastaan keskusmuistissa.
 
 Eräs huomionarvoinen seikka on se, että `UserService`-olio ei tallenna muistiin suoraan `User`-oliota vaan epäsuorasti `UserRepository`-luokan olion kautta. Mistä on kysymys?
 `UserRepository`-luokka abstrahoi eli piilottaa käyttäjien hallinnointiin liittyvän logiikan sovelluksen muilta olioilta.
