@@ -281,7 +281,7 @@ class TestKassapaate(unittest.TestCase):
 
 Ensimmäisessä testissä varmistetaan, että jos kortilla on riittävästi rahaa, kassapäätteen metodin `osta_lounas` kutsuminen veloittaa summan kortilta eli kutsuu kortin metodia `osta`.
 
-Testi ottaa siis kantaa ainoastaan, siihen miten kassapääte kutsuu maksukortin metodeja. **Maksukortin saldoa ei erikseen tarkasteta**, sillä oletuksena on, että maksukortin omat testit varmistavat kortin toiminnan.
+Testi ottaa siis kantaa ainoastaan siihen, miten kassapääte kutsuu maksukortin metodeja. **Maksukortin saldoa ei erikseen tarkasteta**, sillä oletuksena on, että maksukortin omat testit varmistavat kortin toiminnan.
 
 Toinen testi varmistaa, että jos kortilla ei ole riittävästi rahaa, kassapäätteen metodin `osta_lounas` kutsuminen _ei_ veloita kortilta rahaa, eli että kortin metodia `osta` ei ole kutsuttu.
 
