@@ -262,7 +262,7 @@ class TestKassapaate(unittest.TestCase):
     def setUp(self):
         self.kassa = Kassapaate()
 
-    def test_kortilta_velotetaan_hinta_jos_rahaa_on(self):
+    def test_kortilta_veloitetaan_hinta_jos_rahaa_on(self):
         maksukortti_mock = Mock()
         maksukortti_mock.saldo.return_value = 10
         
@@ -270,7 +270,7 @@ class TestKassapaate(unittest.TestCase):
 
         maksukortti_mock.osta.assert_called_with(HINTA)
 
-    def test_kortilta_ei_veloteta_jos_raha_ei_riita(self):
+    def test_kortilta_ei_veloiteta_jos_raha_ei_riita(self):
         maksukortti_mock = Mock()
         maksukortti_mock.saldo.return_value = 4
         
